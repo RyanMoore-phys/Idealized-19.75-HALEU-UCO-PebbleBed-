@@ -2,16 +2,16 @@
 Modeled 19.75% enriched HALEU UCO HTGR Pebble with roughly 13 thousand TRISO pellets, using OpenMC. Using idealized conditions (reflective boundary BC's &amp; cold temperature), this project determines Fresh-fuel k-inf, spectrum, and reaction rate ratios. The project also includes a 3 Year Burnup curve and Isotope Inventory. This project ultizies publically data on cross-sections and atomic properties, links found below. 
 
 <br>
-<br>
 
-ENDF/B-VIII.0 OpenMC Official Data Library
+
+ENDF/B-VIII.0 OpenMC Official Data Library <br>
 https://anl.box.com/shared/static/uhbxlrx7hvxqw27psymfbhi7bx7s6u6a.xz (10+ GB)
 
 <br>
-<br>
 
-ENDF/B-VIII.0 OpenMC Complete Depletion Chain
-https://anl.box.com/shared/static/nyezmyuofd4eqt6wzd626lqth7wvpprr.xml (27.5 MB)
+
+ENDF/B-VIII.0 OpenMC Complete Depletion Chain <br>
+https://anl.box.com/shared/static/nyezmyuofd4eqt6wzd626lqth7wvpprr.xml (27.5 MB) <br>
 
 
 Fresh-fuel k∞ of 1.625 is consistent with the published range for 19.75% HALEU UCO TRISO fuel under infinite-lattice, cold, clean assumptions. The value is ~0.07 higher than reported X-energy Xe-100 fresh k∞ (15.5% HALEU), which is consistent with the ~25% higher fissile loading. Finite-core values would be lower by roughly 20% after including factors such as leakage and operational reactivity holds.
