@@ -1,7 +1,7 @@
 # Idealized-19.75-HALEU-UCO-PebbleBed-
 Using OpenMC, I have modeled a 19.75% enriched HALEU UCO HTGR Pebble with roughly 13 thousand TRISO pellets. Using idealized conditions (reflective boundary BC's &amp; cold temperature), this project determines Fresh-fuel k-inf, spectrum, and reaction rate ratios. The project also includes a 3 Year Burnup curve and Isotope Inventory 
 
-Fresh-fuel k$/inf$
+Fresh-fuel k$/infty$
 
 <img width="790" height="490" alt="UCOIsotopes3YearBurnup" src="https://github.com/user-attachments/assets/e464f089-7aa8-4178-8854-6ea6a97adac6" />
 
