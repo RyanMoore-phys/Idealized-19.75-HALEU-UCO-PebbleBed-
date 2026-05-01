@@ -25,5 +25,5 @@ Fresh-fuel k∞ of 1.625 is consistent with the published range for 19.75% HALEU
 <h2>Pebble Core Map</h2>
 <img width="400" height="400" alt="CrossUCO" src="https://github.com/user-attachments/assets/340a7de1-1aa5-41c9-8a81-81976378f08e" />
 
-<sub>Figure 3: Geom cross-section of HALEU UCO Pebble bed with 9% fill. Reflective BC on the cube around the pebble, forming an infinite pebble lattice.<sub>
+<sub>Figure 3: Geom cross-section of HALEU UCO Pebble bed with 9% fill. Reflective BC on the cube around the pebble, forming an infinite pebble lattice. The colors are trivial, but dots represent the TRISO particles. <sub>
 
