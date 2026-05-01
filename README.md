@@ -3,9 +3,8 @@ Using OpenMC, I have modeled a 19.75% enriched HALEU UCO HTGR Pebble with roughl
 
 
 Fresh-fuel k∞ of 1.625 is consistent with the published range for 19.75% HALEU UCO TRISO fuel under infinite-lattice, cold, clean assumptions. The value is ~0.07 higher than reported X-energy Xe-100 fresh k∞ (15.5% HALEU), which is consistent with the ~25% higher fissile loading. Finite-core values would be lower by roughly 20% after including factors such as leakage and operational reactivity holds.
-
 <br>
-
+<br>
 
 
 <h2>Key Isotopes vs Burnup</h2>
@@ -19,9 +18,11 @@ Fresh-fuel k∞ of 1.625 is consistent with the published range for 19.75% HALEU
 <h2>Pebble k∞ Depletion</h2>
 <img width="1189" height="390" alt="UCOpebbleK-infVSTime Burnup" src="https://github.com/user-attachments/assets/1e8ee141-87dc-44cf-9ddb-4fa4f559a131" />
 
-<sub>Figure 2: Pebble k∞ vs burnup for a 19.75% HALEU UCO TRISO pebble (HTR-PM geometry). Steep initial drop is from Xe-135 equilibrium. Linear decline is U-235 depletion. Projected discharge burnup ~ 340 MWd/kgU (infinite-lattice approx., real-core value of ~160 MWd/kgU after accounting for leakage and burnable poisions).<sub> <br>
+<sub>Figure 2: Pebble k∞ vs burnup for a 19.75% HALEU UCO TRISO pebble (HTR-PM geometry). Steep initial drop is from Xe-135 equilibrium. Linear decline is U-235 depletion. Projected discharge burnup ~ 340 MWd/kgU (infinite-lattice approx., real-core value of ~160 MWd/kgU after accounting for leakage and burnable poisions).<sub>
+<br>
+<br>
 
-
+<h2>Pebble Core Map</h2>
 <img width="400" height="400" alt="CrossUCO" src="https://github.com/user-attachments/assets/340a7de1-1aa5-41c9-8a81-81976378f08e" />
 
 <sub>Figure 3: Geom cross-section of HALEU UCO Pebble bed with 9% fill. Reflective BC on the cube around the pebble, forming an infinite pebble lattice.<sub>
