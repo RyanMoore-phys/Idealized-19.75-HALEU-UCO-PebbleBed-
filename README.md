@@ -32,7 +32,7 @@ Figure 1: Key isotope tracking during a 1080 EFPD burn at 595 W per pebble. U-23
 
 Figure 2: Pebble k∞ vs burnup for a 19.75% HALEU UCO TRISO pebble (HTR-PM geometry). Steep initial drop is from Xe-135 equilibrium. Linear decline is U-235 depletion. Projected discharge burnup ~ 340 MWd/kgU (infinite-lattice approx., real-core value of ~160 MWd/kgU after accounting for leakage and burnable poisions).
 
-**Pebble Core Map**
+**Pebble Core Map** <br>
 ![](figures/pebble_core_map.png)
 
 Figure 3: Geom cross-section of HALEU UCO Pebble bed with 9% fill. Reflective BC on the cube around the pebble, forming an infinite pebble lattice. The colors are trivial, but dots represent the TRISO particles.
