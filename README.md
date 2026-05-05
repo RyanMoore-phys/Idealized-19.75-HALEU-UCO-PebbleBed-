@@ -42,7 +42,8 @@ Determined k∞ of 1.625 at fresh is consistent with the published range for 19.
 
 ## Modeling
 
-| | |
+| Physics | Description |
+|---|---|
 | Fuel | 19.75% HALEU UCO (~80/20 UO₂/UC₂), 10.9 g/cm³ |
 | TRISO kernel / buffer / IPyC / SiC / OPyC outer radii | 215.5 / 312.5 / 352.5 / 387.5 / 427.5 µm |
 | Pebble outer radius | 3.0 cm |
