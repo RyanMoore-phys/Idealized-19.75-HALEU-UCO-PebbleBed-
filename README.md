@@ -15,6 +15,9 @@ The pebble is a 3 cm radius sphere with a 0.5 cm graphite shell. The fuel zone i
 | Pu-239 at EOC | 6% of initial U-235 |
 | Pu-239 share of fissions, EOC | 15% |
 | Discharge burnup | 340 MWd/kgU (infinite lattice) |
+| Doppler defect (300→1200 K) | –3.8 pcm |
+
+In addition, a fuel-temperature sweep from 293K to 1200K was also performed to determine the Doppler reactivity feedback. This is the primary passive-safety mechanism in HTGRs. Results are detailed in the Temperature Reactivity section below.
 
 Determined k∞ of 1.625 at fresh is consistent with the published range for 19.75% HALUE UCO TRISO under cold infinite-lattice assumptions, and runs about 0.07 above reported X-energy Xe-100 fresh k∞ with 15.5% HALUE. This lines up with the physics behind higher enrichment concentration. A finite-core k-effective would be roughly 20% lower once leakage and reactivity holds are folded in.
 
@@ -42,6 +45,35 @@ Figure 3: Geom cross-section of HALEU UCO Pebble bed with 9% fill. Reflective BC
 
 Figure 4: Thermal-spectrum flux in the fuel and the standard U-235 ratios: α (capture/fission), P_f, and η = ν · P_f.
 
+## Temperature Reactivity
+
+To address the idealized temperature assumption in the baseline model, a fuel-temperature
+sweep was run from 293 K to 1200 K in 150 K increments, holding all other conditions
+(geometry, enrichment, BCs) fixed. This isolates the Doppler broadening effect on U-238
+resonance absorption.
+
+**k∞ vs Fuel Temperature**
+![k-inf vs temperature](figures/kinf_vs_temperature.png)
+
+Figure 5: k∞ decreases monotonically with fuel temperature, driven by Doppler broadening
+of the U-238 capture resonances. The drop from cold (~293 K) to operating temperature
+(~1200 K) is approximately -3.8 pcm/K which is consistent with the strongly negative Doppler
+feedback expected for HALEU TRISO fuels.
+
+**Doppler Coefficient**
+![Doppler coefficient](figures/doppler_coefficient.png)
+
+Figure 6: The temperature reactivity coefficient (dk/dT) is negative across the entire
+range and becomes less negative at higher temperatures, consistent with the 1/√T
+dependence of Doppler broadening. The magnitude of ~ –3.8 pcm/K confirms robust
+passive-safety behavior under power-transient conditions.
+
+**Doppler Reactivity Swing**
+![Doppler reactivity](figures/doppler_reactivity.png)
+
+Figure 7: Cumulative reactivity insertion across the temperature sweep. The total Doppler defect must beovercome by excess reactivity at startup and is a key input to control rod worth
+and shutdown margin calculations in a real core design.
+
 
 ## Modeling
 
@@ -64,12 +96,6 @@ Figure 4: Thermal-spectrum flux in the fuel and the standard U-235 ratios: α (c
 This is a screening-level infinite-lattice calculation, not a real safety
 analysis. The big simplifications:
 
-Cold temperature. Everything is at ~293 K. Going to operating temperature
-(fuel ~1200 K, moderator ~900 K) would knock several thousand pcm off k∞ via
-Doppler broadening of U-238 resonances. Fuel temperature coefficient is the
-main passive-safety story for HTGRs, so leaving it out is the biggest gap
-here.
-
 Reflective BCs. Infinite lattice means no leakage. A finite core with
 reflectors, control rods, and burnable absorbers ends up with noticeably
 lower k_eff and a different flux shape.
@@ -84,11 +110,6 @@ paths, especially for minor actinides.
 Constant power. 595 W/pebble for the whole burn, no online refueling, no
 power redistribution.
 
-Most useful next step is a fuel-temperature sweep (300 / 600 / 900 / 1200 K)
-to extract the temperature reactivity coefficient, since that's what's
-missing from the safety story above.
-
-
 ## Layout
 
 ```
@@ -99,6 +120,7 @@ missing from the safety story above.
 ├── pebble_model.py            # geometry + materials, shared by both notebooks
 ├── ModelingPebbleBed.ipynb    # fresh-fuel k_inf, spectrum, rate ratios
 ├── PebbleBedDepletion.ipynb   # 1080 EFPD burnup
+├── Temperature.ipynb   # Temperature Sweep
 └── figures/
 ```
 
